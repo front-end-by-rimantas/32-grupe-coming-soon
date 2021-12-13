@@ -15,9 +15,22 @@
 /* CUSTOM STYLE BELOW THIS COMMENT, FOR THIS PAGE */
 
 .container {
+    display: inline-block;
     width: 1000px;
     margin-left: calc(50% - 500px);
     background-color: yellow;
+}
+
+.container > .left {
+    width: 40%;
+    float: left;
+    margin-right: 5%;
+    background-color: blueviolet;
+}
+.container > .right {
+    width: 55%;
+    float: left;
+    background-color: orange;
 }
 
 /* min-width */
@@ -35,6 +48,15 @@
         width: 600px;
         margin-left: calc(50% - 300px);
         background-color: antiquewhite;
+    }
+
+    .container > .left {
+        width: 100%;
+        margin-right: 0;
+    }
+    .container > .right {
+        width: 100%;
+        margin-top: 40px;
     }
 }
 
